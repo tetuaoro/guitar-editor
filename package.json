@@ -1,7 +1,7 @@
 {
   "name": "guitareditor",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "homepage": "https://tetuaoro.github.io/guitar-editor",
   "dependencies": {
     "gh-pages": "^2.0.0",
@@ -13,7 +13,7 @@
     "react-switch": "^2.3.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "PUBLIC_URL=/ npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
